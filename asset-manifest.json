@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.0f9c1f32.js",
+    "main.css": "/static/css/main.8489d24c.css",
+    "main.js": "/static/js/main.76a1fac9.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/Pramod_Logo2.gif": "/static/media/Pramod_Logo2.569f77c6522f6a77abc7.gif",
+    "static/media/react.png": "/static/media/react.22d1f2096ed82cab7a8a.png",
+    "static/media/typescript.png": "/static/media/typescript.8fe41361dff57e3f6c2e.png",
+    "static/media/git.png": "/static/media/git.dbd2947c01fd99256fda.png",
+    "static/media/github.png": "/static/media/github.f188e75061ea931a2cfb.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.0f9c1f32.js.map": "/static/js/main.0f9c1f32.js.map",
+    "main.8489d24c.css.map": "/static/css/main.8489d24c.css.map",
+    "main.76a1fac9.js.map": "/static/js/main.76a1fac9.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.0f9c1f32.js"
+    "static/css/main.8489d24c.css",
+    "static/js/main.76a1fac9.js"
   ]
 }
