@@ -1,9 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.8489d24c.css",
-    "main.js": "/static/js/main.76a1fac9.js",
+    "main.js": "/static/js/main.05bc9583.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/CricInfo_Project.png": "/static/media/CricInfo_Project.676eface42896bbcaed2.png",
+    "static/media/Skinstore_Project.png": "/static/media/Skinstore_Project.b57795ff25e476b40be8.png",
     "static/media/Pramod_Logo2.gif": "/static/media/Pramod_Logo2.569f77c6522f6a77abc7.gif",
+    "static/media/Pramod_Kumar_Jena_Resume.pdf": "/static/media/Pramod_Kumar_Jena_Resume.bde83075c6bd1106108d.pdf",
     "static/media/react.png": "/static/media/react.22d1f2096ed82cab7a8a.png",
     "static/media/typescript.png": "/static/media/typescript.8fe41361dff57e3f6c2e.png",
     "static/media/git.png": "/static/media/git.dbd2947c01fd99256fda.png",
@@ -14,11 +17,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.8489d24c.css.map": "/static/css/main.8489d24c.css.map",
-    "main.76a1fac9.js.map": "/static/js/main.76a1fac9.js.map",
+    "main.05bc9583.js.map": "/static/js/main.05bc9583.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8489d24c.css",
-    "static/js/main.76a1fac9.js"
+    "static/js/main.05bc9583.js"
   ]
 }
