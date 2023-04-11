@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { Box, Image, Badge, Text, Flex } from "@chakra-ui/react";
+import { Box, Image, Badge, Text, Flex, Button } from "@chakra-ui/react";
 import { AppContext } from "../Context/Theme";
-import { FaGithub, FaSourcetree } from "react-icons/fa";
-import { GrDeploy } from "react-icons/gr";
+import Myntra_Project from "./ProjectImages/Myntra_Project.png";
+import Cricinfo_Project from "./ProjectImages/Cricinfo_Project.png";
 
 export const Project = () => {
   const { Theme } = useContext(AppContext);
@@ -21,7 +21,6 @@ export const Project = () => {
       <Text>
         <Text
           textAlign="center"
-          color=""
           fontSize={{ base: "20px", md: "22px", lg: "40px" }}
           fontWeight={{ base: "600", md: "700" }}
         >
@@ -49,8 +48,8 @@ export const Project = () => {
           >
             <Image
               w="full"
-              src="" // Will fill soon
-              alt=""
+              src={Cricinfo_Project}
+              alt="Cricinfo_Project"
               h={{ lg: "300px" }}
             />
             <Box p="6">
@@ -58,17 +57,16 @@ export const Project = () => {
                 fontWeight="bold"
                 fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}
               >
-                Project
+                Cricinfo
               </Text>
               <Box
                 fontSize={{ base: "sm", md: "md", lg: "md" }}
                 h={{ lg: "80px" }}
                 mb={{ lg: 6 }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-                repudiandae doloremque fugiat, cum obcaecati dolores eum totam
-                ea a placeat eos eius sed nulla maxime illo vitae dolorum magnam
-                praesentium.
+                Cricinfo is a user-friendly website providing global cricket
+                coverage with live scores, news, analysis, and expert opinions.
+                With team rankings, player statistics, and match coverage.
               </Box>
               <Box
                 display={{ base: "column", sm: "column", lg: "flex" }}
@@ -76,6 +74,7 @@ export const Project = () => {
                 mt={3}
               >
                 <Badge
+                  colorScheme="teal"
                   borderRadius="full"
                   px="2"
                   fontSize={{ base: "sm", md: "sm", lg: "sm" }}
@@ -117,28 +116,47 @@ export const Project = () => {
                   >
                     Javascript
                   </Box>
-                  <Box
-                    color="gray.500"
-                    fontWeight="semibold"
-                    letterSpacing="wide"
-                    fontSize={{ base: "xs", md: "sm", lg: "sm" }}
-                    textTransform="uppercase"
-                    ml="2"
-                  ></Box>
                 </Box>
               </Box>
             </Box>
-            <Flex gap={10} alignItems="center" mb={5} ml={7}>
-              <a href="">
-                <FaGithub size={35} />
+            <Flex
+              gap={10}
+              alignItems="center"
+              justifyContent="space-between"
+              mb={5}
+              ml={7}
+            >
+              <a
+                href="https://github.com/rahulohol/tranquil-engine-3054"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button
+                  size={{ base: "xs", md: "md", lg: "md" }}
+                  colorScheme="teal"
+                  borderRadius={20}
+                  borderBottom="5px solid gray"
+                >
+                  Source Code
+                </Button>
               </a>
-              <a href="">
-                <GrDeploy size={30} />
+              <a
+                href="https://magenta-capybara-74b5f2.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button
+                  size={{ base: "xs", md: "md", lg: "md" }}
+                  colorScheme="teal"
+                  borderRadius={20}
+                  borderBottom="5px solid gray"
+                >
+                  Deploy URL
+                </Button>
               </a>
             </Flex>
           </Box>
         </Text>
-
         {/* {second} */}
         <Text right>
           <Box
@@ -149,23 +167,28 @@ export const Project = () => {
             backgroundColor={"white"}
             mb={10}
           >
-            <Image w="full" src="" alt="" h={{ lg: "300px" }} />
+            <Image
+              w="full"
+              src={Myntra_Project}
+              alt="Myntra_Project"
+              h={{ lg: "300px" }}
+            />
             <Box p="6">
               <Text
                 fontWeight="bold"
                 fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}
               >
-                Project
+                Myntra
               </Text>
               <Box
                 fontSize={{ base: "sm", md: "md", lg: "md" }}
                 h={{ lg: "80px" }}
                 mb={{ lg: 6 }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                quod ex, alias esse et voluptatibus recusandae corporis nobis
-                accusamus non totam! Itaque, qui? Delectus error repellendus
-                maxime architecto soluta magni?
+                Myntra is an Indian e-commerce fashion platform offering
+                clothing, accessories, and footwear for men, women, and
+                children. With a user-friendly interface and convenient payment
+                options.
               </Box>
               <Box
                 display={{ base: "column", sm: "column", lg: "flex" }}
@@ -173,6 +196,7 @@ export const Project = () => {
                 mt={3}
               >
                 <Badge
+                  colorScheme="teal"
                   borderRadius="full"
                   px="2"
                   fontSize={{ base: "sm", md: "sm", lg: "sm" }}
@@ -214,15 +238,73 @@ export const Project = () => {
                   >
                     Javascript
                   </Box>
+                  <Box
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize={{ base: "xs", md: "sm", lg: "sm" }}
+                    textTransform="uppercase"
+                    ml="2"
+                  >
+                    React
+                  </Box>
+                  <Box
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize={{ base: "xs", md: "sm", lg: "sm" }}
+                    textTransform="uppercase"
+                    ml="2"
+                  >
+                    Redux
+                  </Box>
+                  <Box
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize={{ base: "xs", md: "sm", lg: "sm" }}
+                    textTransform="uppercase"
+                    ml="2"
+                  >
+                    Chakra
+                  </Box>
                 </Box>
               </Box>
             </Box>
-            <Flex gap={10} alignItems="center" mb={5} ml={7}>
-              <a href="">
-                <FaGithub size={35} />
+            <Flex
+              gap={10}
+              alignItems="center"
+              justifyContent="space-between"
+              mb={5}
+              ml={7}
+            >
+              <a
+                href="https://github.com/madhurn29/gold-kick-1985/tree/main/myntra-clone"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button
+                  size={{ base: "xs", md: "md", lg: "md" }}
+                  colorScheme="teal"
+                  borderRadius={20}
+                  borderBottom="5px solid gray"
+                >
+                  Source Code
+                </Button>
               </a>
-              <a href="">
-                <GrDeploy size={30} />
+              <a
+                href="https://myntra-clone-iota.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button
+                  size={{ base: "xs", md: "md", lg: "md" }}
+                  colorScheme="teal"
+                  borderRadius={20}
+                  borderBottom="5px solid gray"
+                >
+                  Deploy URL
+                </Button>
               </a>
             </Flex>
           </Box>

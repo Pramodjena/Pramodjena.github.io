@@ -1,5 +1,5 @@
 import logo from "../assets/Pramod_Logo2.gif";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import {
   Box,
   Flex,
@@ -22,6 +22,7 @@ export const Navbar = ({
 }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { Theme, ToggleTheme } = useContext(AppContext);
+  const [activeSection, setActiveSection] = useState("");
 
   const light = {
     backgroundColor: "white",
@@ -31,17 +32,18 @@ export const Navbar = ({
   const dark = {
     backgroundColor: "black",
     color: "white",
+    borderBottom: "2px solid gray",
   };
   return (
     <>
       <Box
-        pos="fixed"
+        position="fixed"
         w="100%"
-        zIndex="99"
+        zIndex="1"
         px={4}
         style={Theme === "light" ? light : dark}
         className="ChackraNavBar nav-menu"
-        shadow="lg"
+        shadow="2xl"
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
@@ -70,34 +72,99 @@ export const Navbar = ({
               spacing={4}
               display={{ base: "none", md: "flex" }}
               gap="10px"
-              w={{ base: "", md: "60%", lg: "40%" }}
+              w={{ base: "none", md: "60%", lg: "40%" }}
               justifyContent="space-between"
               alignItems="center"
-              color=""
               fontWeight="650"
             >
-              <Text onClick={ProfileRef} cursor="pointer">
+              <Text
+                onClick={() => {
+                  ProfileRef();
+                  setActiveSection("Home");
+                }}
+                style={
+                  activeSection === "Home"
+                    ? { borderBottom: "3px solid teal" }
+                    : {}
+                }
+                cursor="pointer"
+                _hover={{ borderBottom: "3px solid teal" }}
+              >
                 Home
               </Text>
-              <Text onClick={AboutRef} cursor="pointer">
+              <Text
+                onClick={() => {
+                  AboutRef();
+                  setActiveSection("About");
+                }}
+                style={
+                  activeSection === "About"
+                    ? { borderBottom: "3px solid teal" }
+                    : {}
+                }
+                cursor="pointer"
+                _hover={{ borderBottom: "3px solid teal" }}
+              >
                 About
               </Text>
-              <Text onClick={SkillsRef} cursor="pointer">
+              <Text
+                onClick={() => {
+                  SkillsRef();
+                  setActiveSection("Skills");
+                }}
+                style={
+                  activeSection === "Skills"
+                    ? { borderBottom: "3px solid teal" }
+                    : {}
+                }
+                cursor="pointer"
+                _hover={{ borderBottom: "3px solid teal" }}
+              >
                 Skills
               </Text>
-              <Text onClick={ProjectsRef} cursor="pointer">
+              <Text
+                onClick={() => {
+                  ProjectsRef();
+                  setActiveSection("Project");
+                }}
+                style={
+                  activeSection === "Project"
+                    ? { borderBottom: "3px solid teal" }
+                    : {}
+                }
+                cursor="pointer"
+                _hover={{ borderBottom: "3px solid teal" }}
+              >
                 Project
               </Text>
-              <Text onClick={ContactRef} cursor="pointer">
+              <Text
+                onClick={() => {
+                  ContactRef();
+                  setActiveSection("Contact");
+                }}
+                style={
+                  activeSection === "Contact"
+                    ? { borderBottom: "3px solid teal" }
+                    : {}
+                }
+                cursor="pointer"
+                _hover={{ borderBottom: "3px solid teal" }}
+              >
                 Contact
               </Text>
 
               <a
-                href="https://drive.google.com/file/d/1dBKVFFS6blc0CvPrwNRhZv_w7IAv3SB5/view?usp=sharing"
-                download
-                onclick="window.open('https://drive.google.com/file/d/1dBKVFFS6blc0CvPrwNRhZv_w7IAv3SB5/view?usp=sharing')"
+                onClick={() => setActiveSection("Resume")}
+                style={
+                  activeSection === "Resume"
+                    ? { borderBottom: "3px solid teal" }
+                    : {}
+                }
+                href="https://drive.google.com/file/d/1m3s08EUctgjY3S4xVi7f_wJNMu_io_yb/view?usp=share_link"
+                target="_blank"
+                rel="noreferrer"
               >
-                <Text>Resume</Text>
+                <Text _hover={{ borderBottom: "3px solid teal" }}>Resume</Text>
               </a>
             </Flex>
           </Flex>
@@ -129,9 +196,12 @@ export const Navbar = ({
               <Text onClick={ContactRef} cursor="pointer">
                 Contact
               </Text>
-              <a href="https://drive.google.com/file/d/1dBKVFFS6blc0CvPrwNRhZv_w7IAv3SB5/view?usp=sharing">
-                <Text cursor="pointer">Resume</Text>
-              </a>
+              <Text
+                cursor="pointer"
+                onclick="window.open('https://drive.google.com/file/d/1m3s08EUctgjY3S4xVi7f_wJNMu_io_yb/view?usp=share_link')"
+              >
+                Resume
+              </Text>
             </Stack>
           </Box>
         ) : null}

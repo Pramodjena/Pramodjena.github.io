@@ -1,7 +1,15 @@
 import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 import { VscCloudDownload } from "react-icons/vsc";
+import Pramod_Kumar_Jena_Resume from "../assets/Pramod_Kumar_Jena_Resume.pdf";
+import Pramod_Jena_Personal from "./ProfileImages/Pramod_Jena_Personal.jpg";
+import { useState } from "react";
 
 export const Home = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  const handleLoad = () => {
+    setIsLoaded(true);
+  };
   return (
     <>
       <Box height={{ base: "40px", md: "60px" }}></Box>
@@ -41,7 +49,7 @@ export const Home = () => {
             >
               <Flex>
                 <Text>
-                  <b>Hello!</b>
+                  <b>Hello</b>
                 </Text>
                 <Image
                   mt="-5px"
@@ -59,17 +67,16 @@ export const Home = () => {
               </Text>
             </Flex>
             <Text fontSize={{ base: "15px", md: "30px", lg: "40px" }}>
-              MERN Stack Developer
+              Full Stack Web Developer
             </Text>
-            <a
-              href="https://drive.google.com/file/d/1dBKVFFS6blc0CvPrwNRhZv_w7IAv3SB5/view?usp=sharing"
-              download
-            >
+            <a href={Pramod_Kumar_Jena_Resume} download>
               <Button
                 size={{ base: "sm", md: "md", lg: "lg" }}
                 mt={{ base: "10px", md: "0" }}
                 colorScheme="teal"
                 gap={1.5}
+                borderRadius={20}
+                borderBottom="5px solid gray"
               >
                 Resume <VscCloudDownload color="white" />
               </Button>
@@ -77,12 +84,17 @@ export const Home = () => {
           </Box>
           <Box>
             <Image
-              src="https://avatars.githubusercontent.com/u/103576706?v=4"
-              shadow="lg"
+              src={Pramod_Jena_Personal}
+              shadow="2xl"
+              p="2"
+              borderBottom="6px solid teal"
               mt={{ base: "10px", md: "0px" }}
               w={{ base: "100px", md: "200px", lg: "350px" }}
               borderRadius="50%"
               _hover={{ boxshodow: "lg" }}
+              onLoad={handleLoad}
+              opacity={isLoaded ? 1 : 0}
+              transition="opacity 1s ease-in-out"
               alt="Pramod"
             />
           </Box>

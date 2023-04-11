@@ -17,7 +17,6 @@ export const About = () => {
   return (
     <>
       <Text
-        color=""
         fontSize={{ base: "22px", md: "22px", lg: "40px" }}
         fontWeight={{ base: "600", md: "700" }}
         textAlign="center"
@@ -36,17 +35,24 @@ export const About = () => {
           textAlign={"center"}
         >
           <Text
-            textAlign={"center"}
+            textAlign="justify"
             color={useColorModeValue("gray.700", "gray.400")}
             px={5}
-            fontSize="20"
+            fontSize={{ base: "sm", md: "md", lg: "lg" }}
             style={Theme === "light" ? light : dark}
           >
-            Dedicated and detail-oriented Full stack web developer. Skilled in
-            developing quality projects using HTML, CSS, JS, React, etc. Has
-            expertise in delivering user-friendly software applications within
-            strict deadlines. Looking to secure a stimulating position in
-            product base company as a Full stack web Developer.
+            My name is Pramod Kumar Jena, and I am a dedicated Full Stack Web
+            Developer based in Bhubaneswar, India. I have completed my
+            Bachelor's degree in Computer Science from Rajdhani Engineering
+            College. I specialize in developing quality web projects using a
+            range of technologies including HTML, CSS, JavaScript, TypeScript,
+            Next.js, React, Redux, Node.js, Express, MongoDB, and more. With a
+            keen attention to detail, I am experienced in delivering
+            user-friendly software applications within strict deadlines. I am
+            passionate about learning and staying up-to-date with the latest web
+            development trends and best practices. I am now seeking a
+            challenging and stimulating position as a Full Stack Web Developer
+            at a product-based company.
           </Text>
         </Box>
       </Center>

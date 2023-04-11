@@ -1,7 +1,7 @@
 import { Navbar } from "./Components/Navbar";
 import { Skills } from "./Pages/Skills";
 import { About } from "./Pages/About";
-import Contact from "./Pages/Contact";
+import { Contact } from "./Pages/Contact";
 import { Home } from "./Pages/Home";
 import { useContext, useRef } from "react";
 import { AppContext } from "./Context/Theme.jsx";
@@ -28,11 +28,14 @@ function App() {
   };
 
   const HandleScrollTo = (ref) => {
+    const sectionTop = ref.current.offsetTop;
     window.scrollTo({
-      top: ref.current.offsetTop,
+      top: sectionTop - 60, // subtract 60 pixels to account for the navbar height
+      left: 0,
       behavior: "smooth",
     });
   };
+
   return (
     <div className="App" style={Theme === "light" ? light : dark}>
       <Navbar
@@ -47,7 +50,7 @@ function App() {
         <Home />
       </Box>
 
-      <Box mt={{ base: "0%", md: "7%" }} ref={AboutRef}>
+      <Box mt={{ base: "0%", md: "7%", lg: "none" }} ref={AboutRef}>
         <About />
       </Box>
 
@@ -62,7 +65,7 @@ function App() {
         <Github />
       </Box>
 
-      <Box mt={{ base: "7%", md: "7%", lg: "5%" }} ref={ContactRef}>
+      <Box mt={{ base: "10%", md: "7%", lg: "5%" }} ref={ContactRef}>
         <Contact />
       </Box>
     </div>

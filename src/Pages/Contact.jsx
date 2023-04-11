@@ -1,11 +1,11 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { AiOutlinePhone } from "react-icons/ai";
+import { BsFillTelephoneFill } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
 import { useContext } from "react";
 import { AppContext } from "../Context/Theme";
 
-export default function Contact() {
+export  function Contact() {
   const { Theme } = useContext(AppContext);
 
   const light = {
@@ -45,7 +45,11 @@ export default function Contact() {
           mt="25px"
         >
           <Flex flexDirection="column" alignItems="center" gap={3}>
-            <a href="https://www.linkedin.com/in/pramod-kumar-jena-851738233/">
+            <a
+              href="https://www.linkedin.com/in/pramod-kumar-jena-851738233/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Text>
                 <BsLinkedin />
               </Text>
@@ -56,7 +60,11 @@ export default function Contact() {
           </Flex>
 
           <Flex flexDirection="column" alignItems="center" gap={3}>
-            <a href="https://github.com/Pramodjena">
+            <a
+              href="https://github.com/Pramodjena"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Text>
                 <BsGithub />
               </Text>
@@ -69,7 +77,7 @@ export default function Contact() {
           <Flex flexDirection="column" alignItems="center" gap={3}>
             <a href="tel:+917809795366">
               <Text>
-                <AiOutlinePhone />
+                <BsFillTelephoneFill />
               </Text>
             </a>
             <Text fontSize={{ base: "7px", md: "11px", lg: "15px" }}>

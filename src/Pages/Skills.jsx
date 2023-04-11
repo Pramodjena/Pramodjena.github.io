@@ -27,7 +27,7 @@ export const Skills = () => {
 
   const dark = {
     backgroundColor: "black",
-    color: "black",
+    color: "white",
   };
   const settings = {
     infinite: true,
