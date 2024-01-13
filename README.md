@@ -31,5 +31,6 @@ Hello there! 👋 I'm Pramod, a passionate full-stack web developer with a focus
 
 - 📧 Email: [pramoodjena@gmail.com](mailto:pramoodjena@gmail.com)
 - 🌐 LinkedIn: [Pramod on LinkedIn](https://www.linkedin.com/in/pramod-kumar-jena-851738233)
+- 🌐 Portfolio: [Portfolio](https://pramodjena.github.io)
 
 Feel free to explore my projects, and if you have any questions or collaboration ideas, don't hesitate to reach out! Happy coding! 👨‍💻
