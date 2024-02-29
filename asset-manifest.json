@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.8489d24c.css",
-    "main.js": "/static/js/main.e1ff21d3.js",
+    "main.js": "/static/js/main.d0171b3b.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/Netflix_Clone.png": "/static/media/Netflix_Clone.b9b8e6e2482b7dc56789.png",
     "static/media/Myntra_Project.png": "/static/media/Myntra_Project.22eb217baf669d1f1dd5.png",
     "static/media/Cricinfo_Project.png": "/static/media/Cricinfo_Project.1da883c403e392bba41d.png",
     "static/media/Pramod_Logo2.gif": "/static/media/Pramod_Logo2.569f77c6522f6a77abc7.gif",
+    "static/media/Easy_Resume.png": "/static/media/Easy_Resume.e6fd342018defdeccc82.png",
+    "static/media/Pramod_Kumar_Jena_Resume.pdf": "/static/media/Pramod_Kumar_Jena_Resume.9ea7b078768fa9803907.pdf",
     "static/media/Pramod_Jena_Personal.jpg": "/static/media/Pramod_Jena_Personal.3e3e666040ed53100699.jpg",
-    "static/media/Pramod_Kumar_Jena_Resume.pdf": "/static/media/Pramod_Kumar_Jena_Resume.785b5c66f4bc20aca689.pdf",
     "static/media/react.png": "/static/media/react.22d1f2096ed82cab7a8a.png",
     "static/media/typescript.png": "/static/media/typescript.8fe41361dff57e3f6c2e.png",
     "static/media/git.png": "/static/media/git.dbd2947c01fd99256fda.png",
@@ -18,11 +20,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.8489d24c.css.map": "/static/css/main.8489d24c.css.map",
-    "main.e1ff21d3.js.map": "/static/js/main.e1ff21d3.js.map",
+    "main.d0171b3b.js.map": "/static/js/main.d0171b3b.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8489d24c.css",
-    "static/js/main.e1ff21d3.js"
+    "static/js/main.d0171b3b.js"
   ]
 }
