@@ -28,7 +28,7 @@ export const About = () => {
       <Center style={Theme === "light" ? light : dark}>
         <Box
           style={Theme === "light" ? light : dark}
-          maxW={{ base: "350px", md: "450px", lg: "600px", xl: "800px" }}
+          maxW={{ base: "350px", md: "850px", lg: "1050px", xl: "1250px" }}
           w={"full"}
           bg={useColorModeValue("white", "gray.900")}
           rounded={"lg"}

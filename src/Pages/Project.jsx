@@ -3,6 +3,8 @@ import { Box, Image, Badge, Text, Flex, Button } from "@chakra-ui/react";
 import { AppContext } from "../Context/Theme";
 import Myntra_Project from "./ProjectImages/Myntra_Project.png";
 import Cricinfo_Project from "./ProjectImages/Cricinfo_Project.png";
+import Easy_Resume from "./ProjectImages/Easy_Resume.png";
+import Netflix_Clone from "./ProjectImages/Netflix_Clone.png";
 
 export const Project = () => {
   const { Theme } = useContext(AppContext);
@@ -294,6 +296,269 @@ export const Project = () => {
               </a>
               <a
                 href="https://myntra-clone-iota.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button
+                  size={{ base: "xs", md: "md", lg: "md" }}
+                  colorScheme="teal"
+                  borderRadius={20}
+                  borderBottom="5px solid gray"
+                >
+                  Deploy URL
+                </Button>
+              </a>
+            </Flex>
+          </Box>
+        </Text>
+        {/* {Third Project} */}
+        <Text left>
+          <Box
+            style={Theme === "light" ? light : dark}
+            w={"100%"}
+            borderRadius="lg"
+            overflow="hidden"
+            backgroundColor={"white"}
+            mb={10}
+          >
+            <Image
+              w="full"
+              src={Easy_Resume}
+              alt="Easy_Resume"
+              h={{ lg: "300px" }}
+            />
+            <Box p="6">
+              <Text
+                fontWeight="bold"
+                fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}
+              >
+                Easy Resume
+              </Text>
+              <Box
+                fontSize={{ base: "sm", md: "md", lg: "md" }}
+                h={{ lg: "80px" }}
+                mb={{ lg: 6 }}
+              >
+                Welcome to Easy Resume Resume Builder Web App! I'm excited to
+                introduce you to a user-friendly tool designed for seasoned
+                professionals. Easy Resume app is here to streamline the process
+                for you.
+              </Box>
+              <Box
+                display={{ base: "column", sm: "column", lg: "flex" }}
+                alignItems="baseline"
+                mt={3}
+              >
+                <Badge
+                  colorScheme="teal"
+                  borderRadius="full"
+                  px="2"
+                  fontSize={{ base: "sm", md: "sm", lg: "sm" }}
+                >
+                  TECH STACK
+                </Badge>
+                <Box
+                  display={{ base: "grid", sm: "grid", lg: "flex" }}
+                  gridTemplateColumns="repeat(1,1fr)"
+                  gap={1}
+                >
+                  <Box
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize={{ base: "xs", md: "sm", lg: "sm" }}
+                    textTransform="uppercase"
+                    ml="2"
+                  >
+                    HTML
+                  </Box>
+                  <Box
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize={{ base: "xs", md: "sm", lg: "sm" }}
+                    textTransform="uppercase"
+                    ml="2"
+                  >
+                    CSS
+                  </Box>
+                  <Box
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize={{ base: "xs", md: "sm", lg: "sm" }}
+                    textTransform="uppercase"
+                    ml="2"
+                  >
+                    Javascript
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
+            <Flex
+              gap={10}
+              alignItems="center"
+              justifyContent="space-between"
+              mb={5}
+              ml={7}
+            >
+              <a
+                href="https://github.com/Pramodjena/Resume-Builder"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button
+                  size={{ base: "xs", md: "md", lg: "md" }}
+                  colorScheme="teal"
+                  borderRadius={20}
+                  borderBottom="5px solid gray"
+                >
+                  Source Code
+                </Button>
+              </a>
+              <a
+                href="https://easy-resume-web.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button
+                  size={{ base: "xs", md: "md", lg: "md" }}
+                  colorScheme="teal"
+                  borderRadius={20}
+                  borderBottom="5px solid gray"
+                >
+                  Deploy URL
+                </Button>
+              </a>
+            </Flex>
+          </Box>
+        </Text>
+        {/* {Fourth Project} */}
+        <Text right>
+          <Box
+            style={Theme === "light" ? light : dark}
+            w={"100%"}
+            borderRadius="lg"
+            overflow="hidden"
+            backgroundColor={"white"}
+            mb={10}
+          >
+            <Image
+              w="full"
+              src={Netflix_Clone}
+              alt="Netflix_Clone"
+              h={{ lg: "300px" }}
+            />
+            <Box p="6">
+              <Text
+                fontWeight="bold"
+                fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}
+              >
+                Netflix Clone
+              </Text>
+              <Box
+                fontSize={{ base: "sm", md: "md", lg: "md" }}
+                h={{ lg: "80px" }}
+                mb={{ lg: 6 }}
+              >
+                Welcome to the Netflix Clone React project, an exciting venture
+                into recreating the magic of Netflix using React and enhancing
+                the UI with Tailwind CSS.
+              </Box>
+              <Box
+                display={{ base: "column", sm: "column", lg: "flex" }}
+                alignItems="baseline"
+                mt={3}
+              >
+                <Badge
+                  colorScheme="teal"
+                  borderRadius="full"
+                  px="2"
+                  fontSize={{ base: "sm", md: "sm", lg: "sm" }}
+                >
+                  TECH STACK
+                </Badge>
+                <Box
+                  display={{ base: "grid", sm: "grid", lg: "flex" }}
+                  gridTemplateColumns="repeat(1,1fr)"
+                  gap={1}
+                >
+                  <Box
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize={{ base: "xs", md: "sm", lg: "sm" }}
+                    textTransform="uppercase"
+                    ml="2"
+                  >
+                    HTML
+                  </Box>
+                  <Box
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize={{ base: "xs", md: "sm", lg: "sm" }}
+                    textTransform="uppercase"
+                    ml="2"
+                  >
+                    CSS
+                  </Box>
+                  <Box
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize={{ base: "xs", md: "sm", lg: "sm" }}
+                    textTransform="uppercase"
+                    ml="2"
+                  >
+                    Javascript
+                  </Box>
+                  <Box
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize={{ base: "xs", md: "sm", lg: "sm" }}
+                    textTransform="uppercase"
+                    ml="2"
+                  >
+                    React
+                  </Box>
+                  <Box
+                    color="gray.500"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize={{ base: "xs", md: "sm", lg: "sm" }}
+                    textTransform="uppercase"
+                    ml="2"
+                  >
+                    Tailwind CSS
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
+            <Flex
+              gap={10}
+              alignItems="center"
+              justifyContent="space-between"
+              mb={5}
+              ml={7}
+            >
+              <a
+                href="https://github.com/Pramodjena/Netflix-Clone"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button
+                  size={{ base: "xs", md: "md", lg: "md" }}
+                  colorScheme="teal"
+                  borderRadius={20}
+                  borderBottom="5px solid gray"
+                >
+                  Source Code
+                </Button>
+              </a>
+              <a
+                href="https://netflix-clone-online.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
